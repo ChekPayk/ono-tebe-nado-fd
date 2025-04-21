@@ -1,23 +1,13 @@
-/* .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  height: 293px;
-  font-weight: normal;
-  font-size: 18px;
-  padding: 50px 50px;
-
-} */
-
 .header {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
   box-sizing: border-box;
   width: 100%;
   min-height: 293px;
   margin: auto;
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
-  column-gap: 184px;
-  /* justify-content: space-between; */
   align-items: center;
   height: 293px;
   font-weight: normal;
@@ -25,46 +15,33 @@
   padding: 92px 50px 96px;
 }
 
-
-
-.header-menu-list {
-  /* flex-direction: row;
-  align-items: flex-start; */
-  gap: 33px;
-  /* text-transform: lowercase; */
-  list-style: none;
-  
-    display:flex;
+.header-menu {
+  margin-right: 32px;
 }
 
+.header-menu-list {
+  display:flex;
+  gap: 33px;
+  list-style: none;
+}
 
 .header-menu-item{
   list-style-type: circle;
 }
-.header-menu-item:first-child {
 
+.header-menu-item:first-child {
   list-style-type: unset;
 }
 
 .header-menu-link {
-  /* font-family: Raleway; */
-  /* font-weight: 400;
-  font-size: 18px;
-  line-height: 100%; */
   display: flex;
   margin: auto; 
   white-space: nowrap;
-  
-
 }
-
-
-
 
 .header-menu-item-active .header-menu-link {
   text-decoration: none;
 }
-
 
 .header_logo {
   display: block;
@@ -77,30 +54,297 @@
 }
 
 .contacts {
-  white-space: nowrap;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .address {
   font-style: normal;
 }
 
-/* 
+.cover-container{
+  position: relative;
+}
+
 .cover {
+  position: relative;
+  background-image: url(../images/cover.jpg);
+  min-height: 757px;
+  z-index: 1; 
+}
+
+.overlay {
+  /* min-height: 757px; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); 
+  z-index: 1; 
+}
+
+.cover_title {
+  position: relative;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 115%;
+  text-transform: uppercase;
+  color: white;
+  padding: 165px 50px 207px 50px;
+  z-index: 2; 
+}
+
+.aligned-text {
+  display: block;
+  text-align: left;
+}
+
+.aligned-text_center {
+  display: block;
+  text-align: center;
 
 }
 
-.description {
+.aligned-text_right {
+  display: block;
+  text-align: right;
+}
 
+.letter-spacing-extended {
+  letter-spacing: 30px;
+}
+
+.cover_description {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+  padding: 50px;
+  z-index: 2;
+}
+
+.cover_description-text {
+  color: white;
+  position: relative;
+  word-spacing: 26px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+}
+
+.bet-button {
+  position: relative;
+  all: sunset;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: white;
+  padding: 11px 32px;
+  border: 1px solid white;
+  background-color: transparent;
 }
 
 .lots {
+  margin: 180px 24px 120px;
+}
 
+.lots_heading {
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: black;
+  margin: 0 0 27px 40px;
+}
+
+.lots_card-list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.lots_card-list-item {
+  width: 32%;
+  min-height: 596px;
+}
+
+.card-link {
+  display: block;
+  text-decoration: none;
+  height: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  height: 100%;
+  padding: 50px 40px 40px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card_type_film {
+  background-image: url(../images/card-lot-01.jpg);
+}
+
+.card_type_book {
+  background-image: url(../images/card-lot-02.jpg);
+}
+
+.card_type_picture {
+  background-image: url(../images/card-lot-03.jpg);
+}
+
+.card_title {
+  position: relative;
+  z-index: 2;
+  font-size: 22px;
+  line-height: 120%;
+  color: white;
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.card_text {
+  position: relative;
+  z-index: 2;
+  line-height: 120%;
+  color: white;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.lots_look-more-link {
+  display: inline-block;
+  margin: 30px 0 0 40px;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 100%;
 }
 
 .about {
+  margin: 120px 24px 0;
+}
+
+.about_column {
+  grid-template-columns: 32% 1fr;
+  display: grid;
+  column-gap: 72px;
 
 }
 
-.footer {
+.about_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background: black;
+}
 
-} */
+.about_logo-image {
+  width: 148px;
+  height: 114px;
+}
+
+.about_title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase; 
+  margin-top: 110px;
+  margin-bottom: 100px;
+
+}
+
+.about_text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: 100px;
+  margin-bottom: 24px; 
+}
+
+.about_text:last-of-type {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.footer {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24.3px;
+  display: grid;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 180px;
+  margin: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  padding:0 50px 82px 50px;
+  margin-top: 180px;
+}
+
+.footer_menu {
+  margin-right: 32px;
+}
+
+.footer_menu-list {
+  flex-direction: column;
+  display:flex;
+  list-style: none;
+  align-items: center;
+}
+
+.footer_menu-link {
+  display: flex;
+  margin: auto; 
+  white-space: nowrap;
+}
+
+.footer_menu-link_active .footer_menu-link {
+  text-decoration: none;
+}
+
+.contacts:last-of-type {
+  justify-self: start;
+}
+
+.address {
+  font-style: normal;
+}
+
+.footer_social-list {
+  display:flex;
+  flex-direction: row;
+  gap: 48px;
+  list-style: none;
+  justify-self: end;
+}
+
+.footer_social-list-item {
+  
+}
+
+.footer_social-link {
+  display: flex;
+  margin: auto; 
+  white-space: nowrap;
+}
+
+.footer_social-icon {
+  height: 48px;
+  width: 48px;
+}
