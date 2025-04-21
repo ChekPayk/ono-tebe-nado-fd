@@ -3,12 +3,10 @@
   line-height: 100%;
   box-sizing: border-box;
   width: 100%;
-  min-height: 293px;
   margin: auto;
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  height: 293px;
   font-weight: normal;
   padding: 92px 50px 96px;
 }
@@ -18,7 +16,7 @@
 }
 
 .header-menu-list {
-  display:flex;
+  display: flex;
   gap: 33px;
   list-style: none;
 }
@@ -43,8 +41,8 @@
 
 .header_logo {
   display: block;
-  width: 148px;
-  height: 105px;
+  width: 135px;
+  height: 108px;
 }
 
 .header_logo-image {
@@ -52,7 +50,8 @@
 }
 
 .header .contacts {
-  margin-left: auto;
+  font-style: normal;
+  margin-left: 185px;
   display: flex;
   flex-direction: column;
   text-underline-position: under;
@@ -74,6 +73,8 @@
   background-image: url(../images/cover.jpg);
   min-height: 757px;
   z-index: 1;
+  background-position: center;
+  background-size: cover;
 }
 
 .overlay {
@@ -93,7 +94,7 @@
   line-height: 115%;
   text-transform: uppercase;
   color: white;
-  padding: 165px 50px 100px 50px;
+  padding: 165px 50px 58px 50px;
   z-index: 2;
 }
 
@@ -105,11 +106,15 @@
 .aligned-text_center {
   display: block;
   text-align: center;
+  margin-top: 18px;
+  margin-left: 24px;
 }
 
 .aligned-text_right {
   display: block;
   text-align: right;
+  margin-top: 20px;
+  margin-right: -28px;
 }
 
 .letter-spacing-extended {
@@ -128,7 +133,7 @@
 .cover_description-text {
   color: white;
   position: relative;
-  word-spacing: 26px;
+  word-spacing: 18px;
   text-transform: uppercase;
   font-weight: 400;
   font-size: 22px;
@@ -146,7 +151,7 @@
   text-align: center;
   color: white;
   padding: 11px 32px;
-  border: 1px solid white;
+  border: 1px solid currentColor;
   background-color: transparent;
 }
 
@@ -165,13 +170,13 @@
 .lots_card-list {
   list-style: none;
   display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 27px;
 }
 
 .lots_card-list-item {
   width: 32%;
-  min-height: 596px;
 }
 
 .card-link {
@@ -212,7 +217,7 @@
   color: white;
   text-decoration: underline;
   text-transform: uppercase;
-  font-weight: normal;
+  font-weight: 700;
 }
 
 .card_text {
@@ -220,8 +225,10 @@
   z-index: 2;
   line-height: 120%;
   color: white;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 20px;
+  margin-top: 35px;
+  margin-bottom: 5px;
 }
 
 .lots_look-more-link {
@@ -288,7 +295,6 @@
   display: grid;
   box-sizing: border-box;
   width: 100%;
-  min-height: 180px;
   margin: auto;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
@@ -318,6 +324,7 @@
 }
 
 .footer .contacts {
+  font-style: normal;
   margin-left: 0;
   display: flex;
   flex-direction: column;
