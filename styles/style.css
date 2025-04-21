@@ -56,6 +56,7 @@
   margin-left: auto;
   display: flex;
   flex-direction: column;
+  text-underline-position: under;
 }
 
 .address {
@@ -322,6 +323,7 @@
   margin-left: 0;
   display: flex;
   flex-direction: column;
+  text-underline-position: under;
 }
 
 .footer_social-list {
